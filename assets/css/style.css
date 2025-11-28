@@ -1,0 +1,697 @@
+:root {
+  --primary: #ffffff;
+  --secunder: #242b36;
+  --text: #000000;
+  --background: #f1f3e0;
+  --button: #3b82f6;
+  --hover-button: #034ec6;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background: var(--background);
+}
+
+/* First Navbar */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--primary);
+  z-index: 1000;
+}
+
+.site-header .header_2 ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.site-header .header_1 img {
+  width: 70px;
+  margin: 10px 0 10px 70px;
+}
+
+.header_3 {
+  margin: 40px 70px 0 0;
+}
+
+.header_3 a {
+  text-decoration: none;
+  padding: 5px 30px;
+  border: 1px solid var(--text);
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  border-radius: 6px;
+  background: var(--button);
+  transition: all 0.2s ease-in-out;
+}
+
+.header_3 a:hover {
+  transform: scale(1.05);
+  background: var(--hover-button);
+}
+
+.header_2 {
+  padding-top: 35px;
+}
+
+.header_2 ul a {
+  font-weight: bold;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 22px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.header_2 a:hover {
+  color: var(--button);
+  border-bottom: solid 2px var(--hover-button);
+  transform: scale(1.05);
+}
+
+.site-main {
+  height: 570px;
+}
+
+/* logo */
+.header-logo {
+  display: flex;
+  padding: 10px 50px;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-logo .img img {
+  width: 75px;
+}
+
+.header-logo .text-logo {
+  line-height: 1;
+}
+
+.header-logo .inklusi {
+  color: var(--text);
+  font-size: 35px;
+  border-top: 3px solid var(--text);
+}
+
+.header-logo .nirwana {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--secunder);
+  border-bottom: 3px solid var(--text);
+}
+/* last navbar */
+
+/* First konten login & register */
+.konten-log {
+  max-width: 900px;
+}
+
+.container-reg {
+  max-width: 450px;
+}
+
+.konten-log,
+.container-reg,
+.container-pendaftaran,
+.container-profil {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid var(--text);
+  margin: 30px auto;
+  background: var(--primary);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.25);
+}
+
+.konten-log .foto_school-log {
+  width: 450px;
+}
+
+.konten-log .foto_school-log img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.container-log,
+.container-reg {
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.container-pendaftaran,
+.container-profil {
+  max-width: 650px;
+}
+
+.card-log,
+.card-reg {
+  background: var(--primary);
+  width: 450px;
+  padding: 38px 55px;
+  text-align: center;
+}
+
+.card-pendaftaran,
+.card-profil {
+  background: var(--primary);
+  width: 100%;
+  padding: 38px 55px;
+  text-align: center;
+}
+
+.container-log .profil img,
+.container-reg .profil img,
+.container-profil .profil img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.container-log form,
+.container-reg form,
+.container-pendaftaran form,
+.container-profil form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-log label,
+.container-reg label,
+.container-pendaftaran label. .container-profil label {
+  font-size: 20px;
+  text-align: start;
+}
+
+.container-log .data-log,
+.container-reg .email,
+.container-reg .pass,
+.container-reg .username,
+.container-pendaftaran .data-reg,
+.container-profil .data-profil,
+.container-profil .username,
+.container-profil .email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.container-log input,
+.container-reg input,
+.container-pendaftaran select,
+.container-pendaftaran span,
+.container-profil input[type="text"],
+.container-profil select,
+.container-profil .username span,
+.container-profil .email span {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  font-size: 14px;
+  height: 35px;
+  padding: 0 10px;
+  line-height: 35px;
+}
+
+.container-profil textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* gabung */
+.container-profil,
+.container-pendaftaran {
+  margin-top: 120px;
+}
+
+/* pendaftaran */
+.container-pendaftaran .profil {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container-pendaftaran span {
+  text-align: start;
+  display: flex;
+  align-items: center;
+}
+
+.container-log .button button,
+.container-reg .button button,
+.container-pendaftaran button,
+.container-profil button {
+  text-decoration: none;
+  padding: 7px 50px;
+  border: 1px solid var(--text);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--button);
+  transition: all 0.2s ease-in-out;
+}
+
+.container-log .button button:hover,
+.container-reg .button button:hover,
+.container-pendaftaran button:hover,
+.container-profil button:hover {
+  transform: scale(1.05);
+  background: var(--hover-button);
+  cursor: pointer;
+}
+
+.container-log .button,
+.container-reg .button,
+.container-pendaftaran .button {
+  padding: 15px;
+}
+
+.container-log a,
+.container-reg a {
+  text-decoration: none;
+}
+
+.container-log a:hover,
+.container-reg a:hover {
+  color: var(--hover-button);
+}
+
+/* Last konten login & register */
+
+/* hover form */
+
+/* First konten beranda */
+/* beranda top */
+.konten-beranda .container-top {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  margin: 150px auto 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-top .side-left {
+  flex: 1;
+  max-width: 40%;
+}
+
+.container-top .side-left h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.container-top .side-left h4 {
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.container-top .side-left p {
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secunder);
+}
+
+.container-top .side-left .higlight {
+  color: blue;
+}
+
+.container-top .side-left a {
+  background: var(--button);
+  padding: 7px 35px;
+  border-radius: 50px;
+  border: 1px solid var(--text);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--text);
+  box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.container-top .side-left a:hover {
+  transform: translateX(6px);
+  box-shadow: 7px 15px 50px rgb(0, 0, 0, 0.35);
+  background: var(--hover-button);
+  color: var(--text);
+}
+
+.container-top .side-right img {
+  width: 500px;
+  border-radius: 20px;
+  border: 2px solid var(--text);
+  box-shadow: 20px 20px 10px rgb(0, 0, 0, 0.35);
+  object-fit: contain;
+}
+
+/* beranda bot */
+.konten-beranda .judul {
+  font-size: 55px;
+  text-align: center;
+}
+
+.konten-beranda .des-judul {
+  text-align: center;
+  color: var(--secunder);
+}
+
+.konten-beranda .box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.konten-beranda .box_1 {
+  background: #010817;
+  border: 1px solid var(--text);
+  border-radius: 10px;
+  width: 400px;
+  height: 460px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.konten-beranda .box_1:hover {
+  transform: translateY(-8px);
+  box-shadow: 7px 15px 25px rgb(0, 0, 0, 0.35);
+}
+
+.konten-beranda .box_1 .body-box {
+  height: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.konten-beranda .box_1 h3,
+.konten-beranda .box_1 p,
+.konten-beranda .box_1 a {
+  padding: 10px 30px;
+}
+
+.konten-beranda .box_1 h3,
+.konten-beranda .box_1 p {
+  margin-bottom: 10px;
+}
+
+.konten-beranda .box_1 h3 {
+  color: var(--primary);
+}
+
+.konten-beranda .box_1 p {
+  color: #b3a795;
+  margin-bottom: 10px;
+}
+
+.konten-beranda .box_1 a {
+  padding: 35px;
+  display: block;
+  margin-top: auto;
+}
+
+.konten-beranda .image-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.konten-beranda .button-bot a {
+  text-decoration: none;
+  padding: 5px 50px;
+  border: 1px solid var(--text);
+  border-radius: 6px;
+  color: var(--primary);
+  background: #010817;
+  display: block;
+  margin: 45px auto;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.konten-beranda .button-bot a:hover {
+  transform: translateX(6px);
+  box-shadow: 7px 15px 50px rgb(0, 0, 0, 0.35);
+  background: var(--hover-button);
+  color: var(--text);
+}
+/* Last Konten beranda */
+
+/* first status pendaftaran */
+.konten-status .container-status {
+  max-width: 550px;
+  margin: 120px auto 30px;
+  border: 1px solid var(--text);
+  padding: 38px 50px;
+}
+
+.konten-status .judul-status {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 55px;
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.konten-status .data {
+  display: grid;
+  grid-template-columns: 120px 5px 1fr;
+  gap: 0 10px;
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.konten-status .label,
+.konten-status .titik-dua {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.konten-status .value {
+  font-size: 16px;
+}
+
+.konten-status .status {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+/* last status pendaftaran */
+
+/* beranda admin */
+.konten-admin {
+  max-width: 1500px;
+  margin: 120px auto;
+  display: grid;
+  gap: 30px;
+}
+
+.container-admin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.container-admin .daftar-jurusan,
+.container-admin .daftar-siswa {
+  border: 1px solid var(--text);
+  padding: 30px;
+  text-align: center;
+}
+
+.container-admin .daftar-jurusan h3,
+.container-admin .daftar-siswa h3,
+.konten-admin .judul-jurusan {
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 20px;
+}
+
+.container-admin .daftar-jurusan a,
+.container-admin .daftar-siswa a {
+  text-decoration: none;
+  padding: 7px 55px;
+  color: var(--text);
+  background: var(--button);
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid var(--text);
+}
+
+.container-admin .daftar-jurusan a:hover,
+.container-admin .daftar-siswa a:hover {
+  background: var(--hover-button);
+}
+
+.konten-admin .tambah-jurusan {
+  border: 1px solid var(--text);
+  background: var(--primary);
+  padding: 30px;
+}
+
+.konten-admin .tambah-jurusan form {
+  gap: 10px;
+}
+
+.konten-admin .tambah-jurusan .masukan-jurusan,
+.konten-admin .tambah-jurusan .kuota-jurusan,
+.konten-admin .tambah-jurusan .desk-jurusan {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.konten-admin .tambah-jurusan label {
+  width: 200px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.konten-admin .tambah-jurusan input {
+  width: 100%;
+  padding: 10px;
+  height: 33px;
+}
+
+.konten-admin .button-jurusan {
+  text-align: center;
+}
+
+.konten-admin .button-jurusan button {
+  padding: 10px 120px;
+  border-radius: 10px;
+  background: var(--button);
+  font-weight: bold;
+  border: 1px solid var(--text);
+}
+
+.konten-admin .button-jurusan button:hover {
+  background: var(--hover-button);
+  cursor: pointer;
+}
+
+/* tabel */
+.konten-admin .tabel-jurusan table,
+.konten-admin .tabel-siswa table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.konten-admin th {
+  background: #ddd;
+}
+
+.konten-admin tabel,
+.konten-admin th,
+.konten-admin td {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.konten-admin .tabel-jurusan table th:nth-child(1),
+.konten-admin .tabel-jurusan table td:nth-child(1) {
+  width: 100px;
+}
+
+.konten-admin .tabel-jurusan table th:nth-child(4),
+.konten-admin .tabel-jurusan table td:nth-child(4) {
+  width: 170px;
+}
+
+.konten-admin .tabel-jurusan table th:nth-child(5),
+.konten-admin .tabel-jurusan table td:nth-child(5) {
+  width: 130px;
+}
+
+.konten-admin .btn-aksi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.konten-admin .btn-aksi button,
+.konten-admin .btn-aksi a {
+  font-size: 14px;
+  color: var(--text);
+  flex: 1;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+}
+
+.konten-admin .edit {
+  background: #89cff0;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.konten-admin .delete {
+  background: #ff5e7e;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.konten-admin .tabel-siswa button {
+  padding: 5px 57px;
+  background: #89cff0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* footer */
+.site-footer p {
+  color: #64748b;
+  text-align: center;
+  font-size: 13px;
+  padding: 25px;
+  border-top: solid 1px black;
+}
+
+/* EROR */
+.erorr {
+  color: red;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 5px;
+}
