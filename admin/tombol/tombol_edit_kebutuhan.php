@@ -17,7 +17,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit_kebutuhan' && isset($_GET
         
         // Sembunyikan semua tabel dan form lain saat form edit muncul
         $_SESSION['tampil_jurusan'] = false;
-        $_SESSION['tampil_daftar'] = false; 
+        $_SESSION['tampil_daftar'] = false;
         $_SESSION['tampil_add_j'] = false;
         $_SESSION['tampil_kebutuhan'] = false; // Sembunyikan tabel kebutuhan
         $_SESSION['tampil_add_k'] = false;

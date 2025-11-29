@@ -12,7 +12,7 @@ if (isset($_GET['toggle']) && $_GET['toggle'] == 'kebutuhan') {
     // ubah status menjadi kebalikannya.
 
     $_SESSION['tampil_kebutuhan'] = !$_SESSION['tampil_kebutuhan'];
-    $_SESSION['tampil_daftar'] = false; // Sembunyikan tabel siswa
+    $_SESSION['tampil_daftar'] = false;
     $_SESSION['tampil_add_j'] = false;
     $_SESSION['tampil_jurusan'] = false;
     $_SESSION['tampil_add_k'] = false;

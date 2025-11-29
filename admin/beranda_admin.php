@@ -232,7 +232,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['status_baru'])) {
     updateStatusPendaftaran($DBH, $id_siswa, $status_baru);
 
     // refresh tanpa POST (mencegah submit ulang)
-    header("Location: beranda_admin.php?toggle=siswa");
+    header("Location: beranda_admin.php");
     exit;
 }
 

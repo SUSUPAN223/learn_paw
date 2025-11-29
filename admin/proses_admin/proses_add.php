@@ -16,7 +16,7 @@ $sukses = simpanJurusanBaru($DBH, $nama_jurusan_baru, $deskripsi_jurusan_baru);
 
 // 3. Redirect kembali ke beranda_admin.php dengan status
 if ($sukses) {
-    header('Location: beranda_admin.php?status=jurusan_added');
+    header('Location: beranda_admin.php?status=jurusan_added&toggle=jurusan');
     exit;
 } else {
     // Jika fungsi insert gagal

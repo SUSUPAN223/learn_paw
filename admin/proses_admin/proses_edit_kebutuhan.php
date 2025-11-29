@@ -30,7 +30,7 @@ try {
     $updated_rows = updateKebutuhanById($DBH, $nama_baru_clean, $deskripsi_baru_clean, $id_kebutuhan_stabil);
     
     // Redirect setelah sukses (membersihkan URL dari action=edit)
-    header('Location: beranda_admin.php?status=kebutuhan_updated');
+    header('Location: beranda_admin.php?status=kebutuhan_updated&toggle=kebutuhan');
     exit;
 
 } catch (Exception $e) {

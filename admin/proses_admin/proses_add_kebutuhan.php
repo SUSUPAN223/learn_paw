@@ -16,7 +16,7 @@ $sukses = simpanKebutuhanBaru($DBH, $nama_kebutuhan_baru, $deskripsi_kebutuhan_b
 
 // 3. Redirect kembali ke beranda_admin.php dengan status
 if ($sukses) {
-    header('Location: beranda_admin.php?status=kebutuhan_added');
+    header('Location: beranda_admin.php?status=kebutuhan_added&toggle=kebutuhan');
     exit;
 } else {
     // Jika fungsi insert gagal
